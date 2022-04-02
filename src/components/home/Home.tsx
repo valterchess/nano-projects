@@ -1,6 +1,6 @@
 import React from 'react';
 import BoxIcon from '../../hooks/boxIcon';
-import Filters from './Filters';
+import Filters from '../Filters/Filters';
 import './Home.css';
 
 const hrefBoxIcon: string = 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css';

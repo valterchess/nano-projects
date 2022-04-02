@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css';
+import './Filters.css';
 import UseScript from "../../hooks/useScript";
 
 const homeUrl: string = 'src/components/home/js/home.js';
