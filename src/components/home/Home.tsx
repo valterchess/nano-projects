@@ -1,28 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import BoxIcon from '../../hooks/boxIcon';
+import Filters from './Filters';
 import './Home.css';
 
+const hrefBoxIcon: string = 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css';
 const Home = () => {
 
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.type = "text/javascript";
-        script.
-    })
+  
+    BoxIcon(hrefBoxIcon);
 
     return (
+        
         <div className="home projects" id="home">
-            <script src="./js/mixitup.min.js"/>
-            <script src="./js/home.js"/>
-            <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'></link>
             <h2 className="home__title">Nano Projects</h2>
-            <div className="home__filters">
-                <span className="home__item active-home" data-filter="all">todos</span>
-                <span className="home__item" data-filter=".mentor">Frontend Mentor</span>
-                <span className="home__item" data-filter=".dio">Dio</span>
-                <span className="home__item" data-filter=".my">Pessoais</span>
-                <span className="home__item" data-filter=".others">Outros</span>
-            </div>
-
+            <Filters/>
             <div className="home__container container grid">
 
                 <div className="home__card mix my">
@@ -56,9 +47,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        
     );
-
 };
 
 export default Home;
